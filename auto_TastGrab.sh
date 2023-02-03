@@ -43,7 +43,7 @@ elif [[ "$1" == "push" ]]; then
 		echo "Pushing all Tast files"
 		sleep 1s
 		echo "${fileArray[@]}"
-		## Move file in array to cros_sdk intermidiary directory
+		## Move files in array to cros_sdk intermediary directory
 		sudo mv "${autoGrab}"/"${fileArray[@]}" ~/PNP_June7/chroot"${crosRoot}"
 	fi
 
